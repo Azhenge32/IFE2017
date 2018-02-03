@@ -81,9 +81,7 @@ p {
     display: inline-block;
     background-color: white;
     border: 1px solid #989898;
-    margin-left: 70px;
-    margin-top:20px;
-    padding: 10px;
+    margin-top: 20px;
 }
 .imgdiv span {
     display: block;
@@ -169,12 +167,26 @@ footer {
 }
 
 .leftContainer {
-    width: 70%;
-    float: left;
+    flex: 1;
 }
 .rightContainer {
     width: 30%;
-    float: right;
+}
+
+.clearfix:after {
+    content: '.';
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+
+#parent {
+    display: flex;
 }
 
 
